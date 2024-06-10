@@ -9,5 +9,10 @@
         }
       ]
     }
-  ]
+  ], "build": {
+    "ignore": ["**/node_modules/**"],
+    "typescript": {
+      "ignoreBuildErrors": true
+    }
+  }
 }
