@@ -1,9 +1,15 @@
 'use client';
-
-import '../styles/globals.css';
-import { ThemeProvider as NextThemesProvider } from 'next-themes'
+import { ThemeProvider } from 'next-themes';
 import { type ThemeProviderProps } from 'next-themes/dist/types'
+import '../styles/globals.css';
 
-export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>
-}
+export const Providers: React.FC<{ children:ThemeProviderProps }> = ({ children }) => {
+  return (
+    <>
+    <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+      {children}
+    </ThemeProvider>
+    </>
+    
+  );
+};
