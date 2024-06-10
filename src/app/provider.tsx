@@ -4,8 +4,11 @@ import '../styles/globals.css';
 
 export const Providers: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <ThemeProvider attribute='class' >
+    <>
+    <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
       {children}
     </ThemeProvider>
+    </>
+    
   );
 };
