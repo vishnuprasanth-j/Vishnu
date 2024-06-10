@@ -1,17 +1,20 @@
+
+'use client';
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
-'use client';
-
 import { ThemeProvider } from 'next-themes';
 
 import '../styles/globals.css';
 
-export function Providers({ children }: { children: React.ReactNode }) {
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+export const Providers: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   return (
     <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
       {children}
     </ThemeProvider>
-  )as React.ReactNode;
+  );
 }
+
+
+
