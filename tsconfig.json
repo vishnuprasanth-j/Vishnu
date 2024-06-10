@@ -16,8 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "~/*": ["./public/*"],
-      "react": [ "./node_modules/@types/react" ]
+      "~/*": ["./public/*"]
     },
     "incremental": true,
     "plugins": [
