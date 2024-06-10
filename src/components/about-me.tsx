@@ -1,8 +1,8 @@
-import { Avatar } from '@/components/avatar';
-import { MyEmail } from '@/components/my-email';
-import Link from 'next/link';
-import Image from 'next/image';
 import { Rocket } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+
+import { Avatar } from '@/components/avatar';
 
 const AboutMe = () => {
   return (
@@ -27,7 +27,7 @@ const AboutMe = () => {
           "You need a little bit of rain to have a little bit of rainbow."
           <br />
           <Link
-            href={'https://www.youtube.com/watch?v=nDutfsInUME'}
+            href="https://www.youtube.com/watch?v=nDutfsInUME"
             target='_blank'
             rel='noopener noreferrer'
           >

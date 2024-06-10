@@ -1,12 +1,25 @@
 import NextLink from 'next/link';
+import { FC } from 'react';
+
 export const metadata = {
   title: 'Craft',
   description: 'Creative explorations',
 };
 
-export default function Craft() {
-  const years = ['2024', '2023','2022' ];
-  const itemsByYear = {
+interface Item {
+  slug: string;
+  url: string;
+  title: string;
+  date: string;
+}
+
+interface ItemsByYear {
+  [year: string]: Item[];
+}
+
+const Craft: FC = () => {
+  const years = ['2024', '2023', '2022'];
+  const itemsByYear: ItemsByYear = {
     '2022': [
       {
         slug: 'points',
@@ -62,15 +75,6 @@ export default function Craft() {
                     <p className='shrink-0 text-fg-secondary-color transition-colors group-hover:text-fg-secondary-hover-color'>
                       {item.date}
                     </p>
-                    {/* <time
-                      dateTime={item.date}
-                      className='shrink-0 text-fg-secondary-color transition-colors group-hover:text-fg-secondary-hover-color'
-                    >
-                      {new Date(item.date).toLocaleDateString(undefined, {
-                        month: 'short',
-                        day: 'numeric',
-                      })}
-                    </time> */}
                   </div>
                 </NextLink>
               ))}
@@ -80,4 +84,6 @@ export default function Craft() {
       </div>
     </>
   );
-}
+};
+
+export default Craft;

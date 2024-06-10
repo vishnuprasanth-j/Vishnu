@@ -5,12 +5,12 @@ import NextLink from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { Moon } from '@/components/moon';
+import ThemeToggle from '@/components/ThemeToggle';
 
-import type { Link } from './constants';
+import type { MyLink } from './constants';
 import { NAV_LINKS, SOCIAL_LINKS } from './constants';
 import { navItemVariants } from '../common';
 import { FloatingMenu } from '../floating-menu';
-import ThemeToggle from '@/components/ThemeToggle';
 
 const navIcon = (
   <motion.div
@@ -51,7 +51,7 @@ const navIcon = (
 
 function NavItems() {
   const currentRoute = usePathname();
-  const navLinks: Link[] = [{ node: 'Home', href: '/' }, ...NAV_LINKS];
+  const navLinks: MyLink[] = [{ node: 'Home', href: '/' }, ...NAV_LINKS];
 
   return (
     <>

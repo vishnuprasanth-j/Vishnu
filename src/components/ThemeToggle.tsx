@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
 import { Icon } from '@iconify/react';
 import { useTheme } from 'next-themes';
+import React from 'react';
 
 const ThemeToggle = () => {
   const { theme, setTheme } = useTheme();

@@ -1,20 +1,20 @@
-import { Github, Mail,Instagram,File } from 'lucide-react';
+import { File,Github, Instagram,Mail } from 'lucide-react';
+
 import { MyEmail } from '../my-email';
-import { Icon } from '@iconify/react';
 
 
-export interface Link {
+export interface MyLink {
   node: React.ReactNode;
   href: string;
   ariaLabel?: string;
 }
 
-export const NAV_LINKS: Link[] = [
+export const NAV_LINKS: MyLink[] = [
   { node: 'Work', href: '/work' },
   { node: 'Craft', href: '/craft' },
 ];
 
-export const SOCIAL_LINKS: Link[] = [
+export const SOCIAL_LINKS: MyLink[] = [
   {
     node: <Instagram  strokeWidth={1.2}/>,
     href: 'https://instagram.com/vishzznu',

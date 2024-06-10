@@ -1,14 +1,14 @@
 import clsx from 'clsx';
+import Image from 'next/image';
 import NextLink from 'next/link';
 import { usePathname } from 'next/navigation';
-
-import { Moon } from '@/components/moon.tsx';
-import ThemeToggle from '@/components/ThemeToggle.tsx';
-
-import { NAV_LINKS, SOCIAL_LINKS } from './constants.tsx';
-import { Link } from '../link';
-import Image from 'next/image';
 import { useTheme } from 'next-themes';
+
+import { Moon } from '@/components/moon';
+import ThemeToggle from '@/components/ThemeToggle';
+
+import { MyLink,NAV_LINKS, SOCIAL_LINKS } from './constants';
+import { Link } from '../link';
 export function SideNav() {
   const currentRoute = usePathname();
   const { theme } = useTheme();
@@ -49,7 +49,7 @@ export function SideNav() {
           ))}
         </div>
         <div className='group mt-6 flex flex-col items-center gap-2'>
-          {SOCIAL_LINKS.map((link) => (
+          {SOCIAL_LINKS.map((link:MyLink) => (
             <li key={link.href}>
               <Link
                 href={link.href}
