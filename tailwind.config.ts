@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 export default {
+  darkMode: 'class',
   content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
     extend: {
@@ -8,7 +9,7 @@ export default {
         sans: ['var(--font-lato)'],
       },
       colors: {
-        'bg-color': 'rgb(var(--bg-color) / <alpha-value>)',
+        'bg-color': 'rgba(var(--bg-color))',
         'fg-color': 'var(--fg-color)',
         'fg-hover-color': 'var(--fg-hover-color)',
         'fg-secondary-color': 'var(--fg-secondary-color)',

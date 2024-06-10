@@ -16,9 +16,9 @@ export default function HomePage() {
             Vishnu Prasanth J
           </h1>
           <AboutMe />
-          <p className='mb-5 text-sm text-fg-secondary-color'>
-            2019-PRESENT © Sixian Li
-          </p>
+          {/* <p className='mb-5 text-sm text-fg-secondary-color'>
+            2024-PRESENT ©  Vishnu Prasanth J
+          </p> */}
         </article>
       </main>
     </>

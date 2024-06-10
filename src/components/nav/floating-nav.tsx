@@ -10,6 +10,7 @@ import type { Link } from './constants';
 import { NAV_LINKS, SOCIAL_LINKS } from './constants';
 import { navItemVariants } from '../common';
 import { FloatingMenu } from '../floating-menu';
+import ThemeToggle from '@/components/ThemeToggle';
 
 const navIcon = (
   <motion.div
@@ -81,6 +82,7 @@ function NavItems() {
             </NextLink>
           </li>
         ))}
+        <li key="mode"><ThemeToggle/></li>
       </motion.div>
     </>
   );

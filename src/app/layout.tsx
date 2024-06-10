@@ -1,15 +1,17 @@
+// RootLayout component
 import clsx from 'clsx';
 import { Metadata } from 'next';
-import * as React from 'react';
+import { Raleway } from 'next/font/google';
+import React from 'react';
 
 import '@/styles/globals.css';
 import '@/styles/colors.css';
 
 import { siteConfig } from '@/constant/config';
 
-import { Lato,Big_Shoulders_Display,Raleway,Titillium_Web} from 'next/font/google';
+import { Providers } from './provider';
 
-const roboto =Raleway({
+const roboto = Raleway({
   weight: ['400', '700'],
   subsets: ['latin'],
 });
@@ -22,11 +24,10 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   robots: { index: true, follow: true },
-
   icons: {
-    icon: '/favicon/favicon.ico',
-    shortcut: '/favicon/favicon-16x16.png',
-    apple: '/favicon/apple-touch-icon.png',
+    icon: '/images/avatar.jpg',
+    shortcut: '/images/avatar.jpg',
+    apple: '/images/avatar.jpg',
   },
   manifest: `/favicon/site.webmanifest`,
   openGraph: {
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     title: siteConfig.title,
     description: siteConfig.description,
     siteName: siteConfig.title,
-    images: [`${siteConfig.url}/images/og.jpg`],
+    images: [`${siteConfig.url}/images/avatar.jpg`],
     type: 'website',
     locale: 'en_US',
   },
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteConfig.title,
     description: siteConfig.description,
-    images: [`${siteConfig.url}/images/og.jpg`],
+    images: [`${siteConfig.url}/images/avatar.jpg`],
   },
 };
 
@@ -53,7 +54,7 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body className={clsx('bg-bg-color text-fg-color', roboto.className)}>
+     <body className={clsx('bg-bg-color text-fg-color', roboto.className)}>
         <div
           aria-hidden
           className={clsx(
@@ -63,15 +64,11 @@ export default function RootLayout({
             'gradient-mask-b-0'
           )}
         />
-        <div className='flex h-full flex-col items-center justify-start  md:relative md:flex-row md:items-start md:justify-center md:pb-12 md:pt-32'>
-          {children}
-        </div>
-        {/* {process.env.NODE_ENV === 'production' && (
-          <Script
-            src="https://analytics.sixian.li/script.js"
-            data-website-id="91e683bc-2350-4f92-865b-65aafaef97fb"
-          />
-        )} */}
+        <Providers>
+          <div className='flex h-full flex-col items-center justify-start md:relative md:flex-row md:items-start md:justify-center md:pb-12 md:pt-32'>
+            {children}
+          </div>
+        </Providers>
       </body>
     </html>
   );

@@ -1,6 +1,7 @@
-import { Github, Mail, Rss, Twitter, Youtube } from 'lucide-react';
-
+import { Github, Mail,Instagram,File } from 'lucide-react';
 import { MyEmail } from '../my-email';
+import { Icon } from '@iconify/react';
+
 
 export interface Link {
   node: React.ReactNode;
@@ -15,9 +16,9 @@ export const NAV_LINKS: Link[] = [
 
 export const SOCIAL_LINKS: Link[] = [
   {
-    node: <Twitter strokeWidth={1.2} />,
-    href: 'https://twitter.com/noworkforsixian',
-    ariaLabel: 'My Twitter',
+    node: <Instagram  strokeWidth={1.2}/>,
+    href: 'https://instagram.com/vishzznu',
+    ariaLabel: 'My instagram',
   },
   {
     node: <Github strokeWidth={1.2} />,
@@ -34,8 +35,10 @@ export const SOCIAL_LINKS: Link[] = [
     ariaLabel: 'My Email',
   },
   {
-    node: <Rss strokeWidth={1.2} />,
-    href: '/feed.xml',
-    ariaLabel: 'RSS',
-  },
+    node: (
+        <File strokeWidth={1.2} />
+    ),
+    href: 'https://drive.google.com/file/d/1JIzn2TBkZHdRJQmdEBONiBANAP_9YSdk/view',
+    ariaLabel: 'My Resume',
+  }
 ];

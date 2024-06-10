@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import NextLink from 'next/link';
 export const metadata = {
   title: 'Craft',
@@ -6,14 +5,14 @@ export const metadata = {
 };
 
 export default function Craft() {
-  const years = ['2022', '2023', '2024'];
+  const years = ['2024', '2023','2022' ];
   const itemsByYear = {
     '2022': [
       {
         slug: 'points',
         url: 'https://www.points44.vercel.com',
         title: 'Points',
-        date: '2022-07-30T00:00:00.000Z',
+        date: '30 JUL',
       },
     ],
     '2023': [
@@ -21,13 +20,13 @@ export default function Craft() {
         slug: 'linklist',
         url: 'https://link-list-vishnuprasanthjs-projects.vercel.app/',
         title: 'Link List',
-        date: '2023-10-30T00:00:00.000Z',
+        date: '10 OCT',
       },
       {
         slug: 'VEats',
         url: 'https://food-app-frontend-8o9d.onrender.com/',
         title: 'VEats',
-        date: '2023-12-30T00:00:00.000Z',
+        date: '20 DEC',
       },
     ],
     '2024': [
@@ -35,7 +34,7 @@ export default function Craft() {
         slug: 'matrix',
         url: 'https://www.points44.vercel.com',
         title: 'Matrix Gym',
-        date: '2024-03-01T00:00:00.000Z',
+        date: '1 APR',
       },
     ],
   };
@@ -44,12 +43,6 @@ export default function Craft() {
   return (
     <>
       <h1 className='mobile-header'>Crafts</h1>
-      {/* <div className='item'>
-        <div className='polaroid'>
-          <img src='/images/image.png'></img>
-          <div className='caption'>I Miss London</div>
-        </div>
-      </div> */}
       <div className='flex flex-col gap-3'>
         {years.map((year) => (
           <section key={year} className='border-b border-b-zinc-200 pb-4'>
@@ -66,7 +59,10 @@ export default function Craft() {
                     <h3 className='transition-colors group-hover:text-fg-hover-color'>
                       {item.title}
                     </h3>
-                    <time
+                    <p className='shrink-0 text-fg-secondary-color transition-colors group-hover:text-fg-secondary-hover-color'>
+                      {item.date}
+                    </p>
+                    {/* <time
                       dateTime={item.date}
                       className='shrink-0 text-fg-secondary-color transition-colors group-hover:text-fg-secondary-hover-color'
                     >
@@ -74,7 +70,7 @@ export default function Craft() {
                         month: 'short',
                         day: 'numeric',
                       })}
-                    </time>
+                    </time> */}
                   </div>
                 </NextLink>
               ))}
