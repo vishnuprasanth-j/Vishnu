@@ -34,7 +34,7 @@ const AboutMe = () => {
             <span className='flex items-center'>
               ~ Félix Lengyel{' '}
               <Image
-                src='/images/xqcl.png'
+                src='/images/xqcL.png'
                 alt='Picture of the author'
                 width={30}
                 height={30}
