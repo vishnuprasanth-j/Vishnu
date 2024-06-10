@@ -9,9 +9,5 @@
         }
       ]
     }
-  ], "build": {
-    "typescript": {
-      "ignoreBuildErrors": true
-    }
-  }
+  ]
 }
