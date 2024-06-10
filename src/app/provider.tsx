@@ -11,6 +11,8 @@ export function Providers({
   defaultTheme,
   enableSystem,
 }: ThemeProviderProps) {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   return (
     <NextThemesProvider attribute='class' defaultTheme='system' enableSystem>
       {children}
