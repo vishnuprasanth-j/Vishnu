@@ -82,7 +82,9 @@ function NavItems() {
             </NextLink>
           </li>
         ))}
-        <li key="mode"><ThemeToggle/></li>
+        <li key='mode'>
+          <ThemeToggle />
+        </li>
       </motion.div>
     </>
   );

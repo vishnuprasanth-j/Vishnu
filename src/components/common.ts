@@ -1,4 +1,4 @@
-import type { Variants } from 'framer-motion'
+import type { Variants } from 'framer-motion';
 
 export const navItemVariants: Variants = {
   open: {
@@ -21,4 +21,4 @@ export const navItemVariants: Variants = {
       duration: 0.5,
     },
   },
-}
+};

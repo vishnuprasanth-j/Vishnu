@@ -13,7 +13,14 @@ const experiences = [
       'Followed Agile methodology with daily standup meetings',
       // 'Technologies utilized: ASP.NET Core, Entity Framework, jQuery, JavaScript, Azure DevOps, HTML/CSS, MS SQL Server, C#',
     ],
-    stack: ["teenyicons:javascript-solid","tabler:brand-mysql","mdi:dot-net","mdi:jquery","teenyicons:c-sharp-solid","codicon:azure"],
+    stack: [
+      'teenyicons:javascript-solid',
+      'tabler:brand-mysql',
+      'mdi:dot-net',
+      'mdi:jquery',
+      'teenyicons:c-sharp-solid',
+      'codicon:azure',
+    ],
   },
   {
     company: 'Thoughtle',
@@ -24,7 +31,15 @@ const experiences = [
       'Developed multiple UI components with a specific emphasis on the file upload component, integrating with backend APIs for file transformation necessary for further reconciliation',
       // 'Technologies utilized: Next.js, Firebase, TypeScript, MongoDB, Material-UI, Tailwind CSS',
     ],
-    stack: ['ri:nextjs-fill', 'logos:reactjs', 'ri:reactjs-line',"teenyicons:firebase-solid","ri:tailwind-css-fill","teenyicons:typescript-solid","mdi:material-ui"],
+    stack: [
+      'ri:nextjs-fill',
+      'logos:reactjs',
+      'ri:reactjs-line',
+      'teenyicons:firebase-solid',
+      'ri:tailwind-css-fill',
+      'teenyicons:typescript-solid',
+      'mdi:material-ui',
+    ],
   },
 ];
 
@@ -58,7 +73,12 @@ const Experience = () => {
               <div className='flex'>
                 {exp.stack.map((logo, i) => (
                   <>
-                    <Icon icon={logo} width='2em' height='2em'  className='m-2'/>
+                    <Icon
+                      icon={logo}
+                      width='2em'
+                      height='2em'
+                      className='m-2'
+                    />
                   </>
                 ))}
               </div>

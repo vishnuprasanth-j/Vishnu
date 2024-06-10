@@ -9,9 +9,9 @@ const AboutMe = () => {
     <div>
       <p>
         Hello, I am Vishnu Prasanth J. I found my passion for coding during my
-        school years, which led me to pursue a degree in Computer Science and Engineering. I
-        graduated from Velalar College of Engineering and Technology in 2023
-        with a CGPA of 8.0.
+        school years, which led me to pursue a degree in Computer Science and
+        Engineering. I graduated from Velalar College of Engineering and
+        Technology in 2023 with a CGPA of 8.0.
       </p>
 
       <p>
@@ -27,7 +27,7 @@ const AboutMe = () => {
           "You need a little bit of rain to have a little bit of rainbow."
           <br />
           <Link
-            href="https://www.youtube.com/watch?v=nDutfsInUME"
+            href='https://www.youtube.com/watch?v=nDutfsInUME'
             target='_blank'
             rel='noopener noreferrer'
           >
@@ -58,29 +58,46 @@ const AboutMe = () => {
       <ul className='list-none'>
         <li className='flex items-center'>
           <Rocket strokeWidth={1.2} className='mr-2 shrink-0' />
-          <span>This personal website is built with Next.js, Tailwind CSS, and deployed on Vercel.</span>
+          <span>
+            This personal website is built with Next.js, Tailwind CSS, and
+            deployed on Vercel.
+          </span>
         </li>
         <li className='flex items-center mt-2'>
           <Rocket strokeWidth={1.2} className='mr-2 shrink-0' />
-          <span>Recently, two things that have brought me joy are engaging in deep
-          conversations and lifting weights.</span>
+          <span>
+            Recently, two things that have brought me joy are engaging in deep
+            conversations and lifting weights.
+          </span>
         </li>
         <li className='flex items-center mt-2'>
           <Rocket strokeWidth={1.2} className='mr-2 shrink-0' />
           <span>Inspirations for this website:</span>
           <ul className='ml-4 list-disc'>
             <li>
-              <Link href="https://paco.me/" target="_blank" rel="noopener noreferrer">
+              <Link
+                href='https://paco.me/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 paco.me
               </Link>
             </li>
             <li>
-              <Link href="https://leerob.io/" target="_blank" rel="noopener noreferrer">
+              <Link
+                href='https://leerob.io/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 leerob.io
               </Link>
             </li>
             <li>
-              <Link href="https://dailyminimal.tumblr.com/" target="_blank" rel="noopener noreferrer">
+              <Link
+                href='https://dailyminimal.tumblr.com/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 dailyminimal.tumblr.com
               </Link>
             </li>

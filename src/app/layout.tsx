@@ -54,7 +54,7 @@ export default function RootLayout({
 }) {
   return (
     <html>
-     <body className={clsx('bg-bg-color text-fg-color', roboto.className)}>
+      <body className={clsx('bg-bg-color text-fg-color', roboto.className)}>
         <div
           aria-hidden
           className={clsx(

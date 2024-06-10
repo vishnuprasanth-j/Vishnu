@@ -10,15 +10,24 @@ const ThemeToggle = () => {
   };
 
   return (
-    <button onClick={toggleTheme} className="focus:outline-none">
+    <button onClick={toggleTheme} className='focus:outline-none'>
       {theme === 'dark' ? (
-        <Icon icon="mynaui:sun" width="24" height="24" className="rotate-180 transition-transform duration-500" />
+        <Icon
+          icon='mynaui:sun'
+          width='24'
+          height='24'
+          className='rotate-180 transition-transform duration-500'
+        />
       ) : (
-        <Icon icon="mynaui:moon" width="24" height="24" className="transition-transform duration-500" />
+        <Icon
+          icon='mynaui:moon'
+          width='24'
+          height='24'
+          className='transition-transform duration-500'
+        />
       )}
     </button>
   );
 };
 
 export default ThemeToggle;
-

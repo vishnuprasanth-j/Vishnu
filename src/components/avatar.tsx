@@ -4,7 +4,7 @@ import React from 'react';
 export function Avatar() {
   return (
     <>
-     <Image
+      <Image
         src='/images/MyAvatar.jpeg'
         alt='Picture of the author'
         width={100}
@@ -12,6 +12,5 @@ export function Avatar() {
         className='m-0 grayscale '
       />
     </>
-  
   );
 }

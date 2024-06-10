@@ -1,7 +1,6 @@
-import { File,Github, Instagram,Mail } from 'lucide-react';
+import { File, Github, Instagram, Mail } from 'lucide-react';
 
 import { MyEmail } from '../my-email';
-
 
 export interface MyLink {
   node: React.ReactNode;
@@ -16,7 +15,7 @@ export const NAV_LINKS: MyLink[] = [
 
 export const SOCIAL_LINKS: MyLink[] = [
   {
-    node: <Instagram  strokeWidth={1.2}/>,
+    node: <Instagram strokeWidth={1.2} />,
     href: 'https://instagram.com/vishzznu',
     ariaLabel: 'My instagram',
   },
@@ -35,10 +34,8 @@ export const SOCIAL_LINKS: MyLink[] = [
     ariaLabel: 'My Email',
   },
   {
-    node: (
-        <File strokeWidth={1.2} />
-    ),
+    node: <File strokeWidth={1.2} />,
     href: 'https://drive.google.com/file/d/1JIzn2TBkZHdRJQmdEBONiBANAP_9YSdk/view',
     ariaLabel: 'My Resume',
-  }
+  },
 ];

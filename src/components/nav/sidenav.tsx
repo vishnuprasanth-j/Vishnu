@@ -7,7 +7,7 @@ import { useTheme } from 'next-themes';
 import { Moon } from '@/components/moon';
 import ThemeToggle from '@/components/ThemeToggle';
 
-import { MyLink,NAV_LINKS, SOCIAL_LINKS } from './constants';
+import { MyLink, NAV_LINKS, SOCIAL_LINKS } from './constants';
 import { Link } from '../link';
 export function SideNav() {
   const currentRoute = usePathname();
@@ -49,7 +49,7 @@ export function SideNav() {
           ))}
         </div>
         <div className='group mt-6 flex flex-col items-center gap-2'>
-          {SOCIAL_LINKS.map((link:MyLink) => (
+          {SOCIAL_LINKS.map((link: MyLink) => (
             <li key={link.href}>
               <Link
                 href={link.href}
