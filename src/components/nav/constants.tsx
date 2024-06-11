@@ -35,7 +35,7 @@ export const SOCIAL_LINKS: MyLink[] = [
   },
   {
     node: <File strokeWidth={1.2} />,
-    href: 'https://drive.google.com/file/d/1JIzn2TBkZHdRJQmdEBONiBANAP_9YSdk/view',
+    href: 'https://drive.google.com/file/d/11IcSFXJ6FwrjsMTKeb2GaN7114GTVr6T/view?usp=sharing',
     ariaLabel: 'My Resume',
   },
 ];
