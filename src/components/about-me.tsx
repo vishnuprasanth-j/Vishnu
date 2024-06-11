@@ -16,7 +16,7 @@ const AboutMe = () => {
 
       <p>
         I currently work as a Software Engineer at Kaar Infotech. Previously, I
-        did an internship at Toutle.
+        did an internship at Thoughtle.
       </p>
 
       <div className='flex items-center gap-4 md:my-10'>
