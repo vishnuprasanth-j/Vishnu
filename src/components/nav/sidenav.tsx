@@ -17,7 +17,7 @@ export function SideNav() {
       <ul className='flex flex-col justify-between'>
         <li className='flex'>
           <NextLink href='/' aria-label='home' className='m-auto'>
-            {theme === 'dark' ? (
+            {theme === 'dark' && (
               <Image
                 src='/images/rednoise.gif'
                 alt='Example GIF'
@@ -25,9 +25,8 @@ export function SideNav() {
                 height={56}
                 className='rounded-full'
               />
-            ) : (
-              <Moon />
             )}
+            {theme === 'light' && <Moon />}
           </NextLink>
         </li>
         <div className='group mt-4 flex flex-col items-center gap-1'>
