@@ -17,9 +17,7 @@ export function SideNav() {
       <ul className='flex flex-col justify-between'>
         <li className='flex'>
           <NextLink href='/' aria-label='home' className='m-auto'>
-            {theme === 'light' ? (
-              <Moon />
-            ) : (
+            {theme === 'dark' ? (
               <Image
                 src='/images/rednoise.gif'
                 alt='Example GIF'
@@ -27,6 +25,8 @@ export function SideNav() {
                 height={56}
                 className='rounded-full'
               />
+            ) : (
+              <Moon />
             )}
           </NextLink>
         </li>
