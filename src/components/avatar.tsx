@@ -5,11 +5,11 @@ export function Avatar() {
   return (
     <>
       <Image
-        src='/images/MyAvatar.jpeg'
+        src='/images/Me.jpg'
         alt='Picture of the author'
-        width={100}
-        height={100}
-        className='m-0 grayscale '
+        width={200}
+        height={200}
+        className='m-0  '
       />
     </>
   );

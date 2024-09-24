@@ -53,7 +53,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
+    <html suppressHydrationWarning>
       <body className={clsx('bg-bg-color text-fg-color', roboto.className)}>
         <div
           aria-hidden
