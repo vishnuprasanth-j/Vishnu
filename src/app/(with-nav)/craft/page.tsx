@@ -49,6 +49,12 @@ const Craft: FC = () => {
         title: 'Matrix Gym',
         date: '1 APR',
       },
+      {
+        slug: 'fontscout',
+        url: 'https://github.com/vishnuprasanth-j/FontScout',
+        title: 'FontScout',
+        date: '21 AUG',
+      },
     ],
   };
   const title = 'Crafts';
